@@ -3,7 +3,7 @@ package com.dhanush.domain;
 import java.util.Date;
 
 public class Facility {
-
+//private variables
 	private int Faciltiy_id;
 	private int Faciltiy_Manager_id;
 	private int Area_Manager_id;

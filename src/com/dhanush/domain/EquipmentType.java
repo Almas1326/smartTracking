@@ -3,7 +3,7 @@ package com.dhanush.domain;
 import java.util.Date;
 
 public class EquipmentType {
-
+//private variables
 	private int Equipment_Type_Id;
 	private String NAME;
 	private Date Date;

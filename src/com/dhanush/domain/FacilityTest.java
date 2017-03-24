@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class FacilityTest {
 	Facility facility=new Facility();
-
+//facility test
 	@Test
 	public void testGetFaciltiy_id() {
 		facility.setFaciltiy_id(0001);

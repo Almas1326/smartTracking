@@ -9,7 +9,7 @@ import org.junit.Test;
 public class EquipmentTypeTest {
 	
 	EquipmentType card=new EquipmentType();
-	
+
 	@Test
 	public void testGetEquipment_Type_Id() {
 		card.setEquipment_Type_Id(10);

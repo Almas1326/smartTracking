@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Map;
 
 public class User {
-    
+    //Equipment pojo class
 	Map m;
 	private int Equipment_Id;
 	private String Equipment_Type_Name;

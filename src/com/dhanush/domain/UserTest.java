@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import java.util.Date;
 
 import org.junit.Test;
-
+//test class for user
 public class UserTest {
 	User user=new User();
 	@Test
