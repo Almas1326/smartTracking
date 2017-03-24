@@ -1,3 +1,4 @@
+<!-- display data form -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -21,11 +22,11 @@
 <style>
 body {
 	font-size: 20px;
-	color: teal;
+	color:DarkSlateBlue  ;
 	font-family: Calibri;
 }
 div.ex {
-	text-align: right width:100px;
+	text-align: center;
 	padding: 0px;
 	border: 0px solid silver;
 	top-margin: 50px
@@ -42,16 +43,16 @@ td {
 	font-size: 15px;
 	color: white;
 	font: bold;
-	background-color: teal;
+	background-color: LightCoral ;
 	border: thick;
 }
 div.tl {
 
-	text-align:left ;
-	padding: 10px;
+    text-align: center ; 
+	padding: 1px;
 	border: 20px white;
 	margin: 0px;
-	background-color: teal;
+	background-color: BlanchedAlmond ;
     color:white;
 }
 
@@ -65,6 +66,13 @@ div.tl {
 
  line-height: 6px; */
 
+}
+.btncolour{
+color: white;
+background-color: teal;
+border-color: #4cae4c;
+align:center;
+width:80px;
 }
 </style>
 
@@ -108,10 +116,32 @@ $(document).ready(function () {
 <body>
 <div class="ex">
 <div class="tl">
-		 <b>Equipment Registration </b>
+ <div class="container">
+ 
+ <a href="#" class="navbar-brand"> </a> <button class="navbar-toggle"
+      data-toggle="collapse" data-target=".navHeaderCollapse"></button>
+
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Admin</a></li>
+
+          <li><a href="#">Master</a>
+          </li>
+ <li class=""><a href="Login">Logout</a></li>
+           </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+    
+  
+		<b>EQUIPMENT REGISTRATION </b> 
 			</div><br>
 			<div>
+			<div class="container" align="right" > 
+     <a href="register">Add</a></div>
 			<center>
+			
 			<div class = "table-responsive table-bordered obj" style="background-color:#FFF0F5">
 				<table id="example" class="table datatable display table-bordered table-stripped table-responsive"  border="1" width="50" cellspacing="0">
 		<thead>
@@ -138,9 +168,7 @@ $(document).ready(function () {
      </tbody></table>
      </div>
      <br/>
-     <!--<td>  <INPUT TYPE="BUTTON" VALUE="Qrcode"  ></td> -->
-             <a href="register">Click Here Add New Equipment </a>
- </center>
+      </center>
  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

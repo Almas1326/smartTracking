@@ -1,3 +1,4 @@
+<!-- registration form for equipment -->
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
@@ -22,12 +23,12 @@ body {
 	font-size: 20px;
 	color: teal;
 	font-family: Calibri;
-	padding:40px;
+	margin:0px;
+	
 }
 
 td {
-	font-size: 13.5px;
-	
+	font-size:15px;
 	font-style:bold;
 	color: black;
 	width: 110px;
@@ -35,7 +36,7 @@ td {
 	text-align:left;
 }
  select {
-        width:243px;
+        width:175px;
     }
   
     
@@ -47,20 +48,19 @@ td {
 	border: thick;
 }
 div.ex {
-
-	text-align: right width:100px;
-	
+text-align: right width:100px;
 	padding: 0px;
-	border: 2px solid silver;
+	border: 0px solid silver;
 	top-margin: 50px
+
+	
 }
 div.tl {
-background-color: teal;
-color:white;
-	text-align: center ;
 	padding: 10px;
-	border: 2px solid silver;http://localhost:3333/SpringJDBCTemplate/getList
-	margin: 0px
+	border: 20px white;
+	margin: 0px;
+	background-color: teal;
+    color:white;
 }
 .btncolour{
 color: white;
@@ -92,37 +92,17 @@ width:80px;
     
   });
   </script>
-  <script>
-  
-  /* $(function() {
-	  $('.datepicker').change(function () {
-	  var from = $('.datepicker').datepicker('getDate');
-	 // var date_diff = Math.ceil((from.getTime() - Date.parse(today)) / 86400000);
-	 var end = from.getFullYear()+"-"+from.getMonth()+1+"-"+fr<td><input type="submit" value="Save" /></td>om.getDate();
-	  alert(from.getMonth()+1+"-"+from.getDate()+"-"+from.getFullYear());
-	
-	  var sd= $('#fromDate').val();
-	  alert("sd"+sd);
-	  $( ".datepicker1" ).datepicker({
-		  minDate:from
-	  }
-			  );
-	  })
-    
-  }); */
-  </script>
-   
-</head>
+  </head>
 <body>
 <div class="ex">
 
 	<div class="tl">
-		 <b>Add New Equipment </b> </div>
+		<center> <b>ADD NEW EQUIPMENT </b></center> </div>
 		<br />
-		<center>
+		<br><center>
 			<form:form method="post" class = "table-responsive" action="/SmartTrack/insert"  modelAttribute="user" name="frm">
 
-				<table>
+				<table cellspacing="15">
 							<tr>
 						<td>Equipment Id:</td>
 						<td><form:input path="Equipment_Id" length="2" /></td>
@@ -141,11 +121,11 @@ width:80px;
 						<td><form:input path="Description"/></td>
 					</tr>
 					<tr>
-						<td>S NO:</td>
+						<td>Serial NO:</td>
 						<td><form:input path="S_NO" /></td>
 					</tr>
 					<tr>
-						<td>Reg No:</td>
+						<td>Registration No:</td>
 						<td><form:input path="Reg_No" /></td>
 					</tr>
 					<tr>
@@ -166,14 +146,16 @@ width:80px;
 				<td><input type="submit" value="Save" class="btncolour" name="submit"/></td>
 					</tr>
 			
-					<tr>
+					<!-- <tr>
 					<td></td>
 					
 						<td colspan="2"><a href="getList">Click to See List of Equipment</a></td>
 								
-					</tr>
+					</tr> -->
 
 				</table>
+				<div>
+				<a href="getList">Click Here to See List of Equipment</a></div>
 			</form:form>
 		</div>
 	</center>
