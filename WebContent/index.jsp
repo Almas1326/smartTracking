@@ -1,1 +1,2 @@
-<%response.sendRedirect("register");%>
+<!-- first page to display -->
+<%response.sendRedirect("Login");%>
