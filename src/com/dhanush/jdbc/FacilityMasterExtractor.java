@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.ResultSetExtractor;
 import com.dhanush.domain.EquipmentType;
 import com.dhanush.domain.Facility;
 public class FacilityMasterExtractor implements ResultSetExtractor<Facility> {
-
+//master extractor
 	public Facility extractData(ResultSet resultSet) throws SQLException,
 			DataAccessException {
 		List userList = new ArrayList();

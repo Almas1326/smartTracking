@@ -8,7 +8,7 @@ import org.springframework.jdbc.core.RowMapper;
 import com.dhanush.domain.User;
 
 public class UserRowMapper implements RowMapper<User> {
-
+//user rowmapper
 	@Override
 	public User mapRow(ResultSet resultSet, int line) throws SQLException {
 		UserExtractor userExtractor = new UserExtractor();

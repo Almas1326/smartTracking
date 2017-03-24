@@ -8,7 +8,7 @@ import org.springframework.jdbc.core.RowMapper;
 import com.dhanush.domain.EquipmentType;
 
 public class FacilityRowMapper implements RowMapper<EquipmentType> {
-
+//facility row mapper
 	@Override
 	public EquipmentType mapRow(ResultSet resultSet, int line) throws SQLException {
 		FacilityExtractor facilityExtractor = new FacilityExtractor();

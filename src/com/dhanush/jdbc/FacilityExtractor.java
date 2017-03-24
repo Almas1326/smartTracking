@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.ResultSetExtractor;
 import com.dhanush.domain.EquipmentType;
 
 public class FacilityExtractor implements ResultSetExtractor<EquipmentType> {
-
+//facility extractor
 	public EquipmentType extractData(ResultSet resultSet) throws SQLException,
 			DataAccessException {
 		List userList = new ArrayList();

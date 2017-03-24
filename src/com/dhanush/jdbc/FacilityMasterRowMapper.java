@@ -7,7 +7,7 @@ import com.dhanush.domain.EquipmentType;
 import com.dhanush.domain.Facility;
 
 public class FacilityMasterRowMapper implements RowMapper<Facility> {
-
+//rowmapper
 	@Override
 	public Facility mapRow(ResultSet resultSet, int line) throws SQLException {
 		FacilityMasterExtractor facilityMasterExtractor = new FacilityMasterExtractor();
